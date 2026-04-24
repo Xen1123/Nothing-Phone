@@ -1,1 +1,1 @@
-<h1 align=center>Nothing Phone Repository</h1>h1>
+<h1 align=center>Nothing Phone Repository</h1>
