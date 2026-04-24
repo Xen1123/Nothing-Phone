@@ -1,2 +1,1 @@
-# Nothing-Phone
-A simple repository to help you with your nothing phone!
+<h1 align=center>Nothing Phone Repository</h1>h1>
