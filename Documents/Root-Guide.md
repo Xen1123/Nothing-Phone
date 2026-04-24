@@ -35,7 +35,7 @@
 - First, Find The Stock Firmware For Your Device [Here](./Stock-Firmware.md)
   - Find the `init_boot.img` and pull it to the Downloads folder
 - Second, Download [Magisk](https://github.com/topjohnwu/Magisk/releases/download/v30.7/Magisk-v30.7.apk)
-- `adb install Magisk-v30.7.apk`
+  - `adb install Magisk-v30.7.apk`
 
 **Linux🐧 / MacOS🍎**
 ```bash
@@ -83,3 +83,6 @@ fastboot flash init_boot root_init_boot.img && fastboot reboot
   - [Android Debloat Scripts](../Debloaters) (Be Careful! The Full-Cleanse Will Delete Google Play Store And Play Services, The Typical Debloat Keeps Those In Tact, Though)
   - LSPosed/Vector Is A Very Good Implementation of Xposed, Which Uses Root To Allow The User To Hook Apps Into System Processes, Download It [Here!](https://github.com/JingMatrix/Vector/releases/download/v2.0/Vector-v2.0-3021-Release.zip)
   - [Droidify](https://github.com/Droid-ify/client/releases/download/v0.7.1/app-release.apk) Is An App Store Of A Collection Of Free And Open Source (FOSS) Apps That You Can Download, Some Apps Available In Droidify Are Directly Reliant On LSPosed/Vector
+  - Play Integrity
+    - When you unlock an Android bootloader, root the device, or flash a custom ROM, your device is considered "bad" to Google's servers. Apps that rely on Play Integrity, this is device dependent, Google Pixels are typically very good at Play Integrity, even with unlocked, modded devices. Although Pixels are typically safe, other phones tend to have broken integrity just from unlocking the bootloader - Magisk modules do exist to help you, though, but on select devices, you'll need to flash all of these.
+      - [Strong Play Integrity Fix](https://github.com/sarhan00/Strong-Integrity-Fix/releases/download/v10.0.21/Play.Integrity.Fix.-.Strong.Integrity.-v10.0.21.zip)
