@@ -6,3 +6,7 @@
     - [Nothing Flasher (Just Flashes Images And Can Be Used To Flash Custom ROMs On Nothing Phones)](./Flasher/Nothing-Flasher.sh)
     - [Nothing Restorer(Also Flashes, But Also Locks, Not Recommended With Custom ROM)](./Flasher/Nothing-Restore.sh)
 
+## Documents
+- Root Guide And Nothing Firmware/Apps
+    - [Root Guide](./Documents/Root-Guide.md)
+    - [Firmware & Apps](./Documents/Firmware-Apps.md)
