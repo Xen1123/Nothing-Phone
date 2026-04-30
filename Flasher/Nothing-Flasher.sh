@@ -82,7 +82,7 @@ case $opt in
                 echo "Skipping $img: Image File Not Found."
             fi
         done
-        fastboot reboot
+        fastboot reboot recovery
         exit
         ;;
     "No")
