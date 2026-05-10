@@ -66,7 +66,10 @@ for img in images:
      if file_path.is_file():
           print(f"\nFlashing {img} . . .")
           subprocess.run([
-               "fastboot", "flash", img, file_path
+               "fastboot", "flash", f"{img}_a", file_path
+          ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+          subprocess.run([
+               "fastboot", "flash", f"{img}_b", file_path
           ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 if os.name == 'nt':
@@ -98,7 +101,7 @@ for img in images:
      file_path = Path(f"{img}.img")
 
      if file_path.is_file():
-          print(f"Flashing {img}")
+          print(f"\nFlashing {img} . . .")
           subprocess.run([
                "fastboot", "flash", img, file_path
           ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
